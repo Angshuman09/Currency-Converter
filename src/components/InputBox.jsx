@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import { useId } from 'react';
 function InputBox({
     label,
     amount,
@@ -45,11 +44,11 @@ function InputBox({
                     
                         {
                         currencyOptions.map((currency)=>
-                        {
+                        (
                             <option value={currency} key={currency}>
                                 {currency}
                             </option>
-                        })
+                        ))
                         }
                 
                 </select>
